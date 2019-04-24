@@ -1,0 +1,17 @@
+my.domain.com {
+  tls /root/certs/live/my.domain.com/cert.pem /root/certs/live/my.domain.com/privkey.pem
+  log stdout
+  errors stdout
+  proxy / localhost:9000 {
+    transparent
+  }
+}
+
+# Catchall to prevent easy exploration
+*:80 {
+  errors {
+    404 /srv/404.html
+  }
+}
+
+
