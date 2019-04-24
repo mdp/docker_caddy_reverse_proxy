@@ -7,5 +7,5 @@ support for HTTPS/SSL
 
 1. Clone the repo
 1. Copy and modify Caddyfile.sample to Caddyfile
-1. Use Certbot to get the appropriate certs ([https://github.com/mdp/docker_certbot])
+1. Use Certbot to get the appropriate certs (https://github.com/mdp/docker_certbot])
 1. Launch it using docker
